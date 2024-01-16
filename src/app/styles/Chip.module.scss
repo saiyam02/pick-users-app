@@ -1,0 +1,19 @@
+@import './variable.scss';
+@import './common.scss';
+
+.container {
+    @include disable-select;
+    @include font-thirteen;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 100px;
+    padding: 6px 12px;
+    background-color: $GRAY_OPACITY_3;
+    color: $GRAY_5;
+    box-sizing: border-box;
+
+    &__selected {
+        border: 2px solid $PRIMARY;
+    }
+}

@@ -1,0 +1,27 @@
+
+@import './variable.scss';
+@import './common.scss';
+
+  .chip {
+      margin: 2px 4px 2px 0;
+      padding: 0;
+
+      &__leadingIcon {
+          height: 24px;
+          width: 24px;
+          border-radius: 50%;
+      }
+
+      span {
+          padding-left: 6px;
+      }
+
+      &__closeIcon {
+          height: 18px;
+          width: 18px;
+          padding: 0 4px;
+          cursor: pointer;
+      }
+  }
+
+  

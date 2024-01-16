@@ -1,0 +1,37 @@
+@import './variable.scss';
+@import './common.scss';
+
+.container {
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: $GRAY_6;
+    padding: 4px 8px;
+    text-align: start;
+    grid-template-columns: 32px 1fr 2fr;
+
+    &__icon {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+    }
+
+    &__title {
+        @include font-twelve-bold;
+        white-space: nowrap;
+        padding: 0 8px;
+        flex-grow: 1;
+    }
+
+    &__subtitle {
+        @include overflow-ellipsis;
+        @include font-twelve-light;
+        padding: 0 8px;
+        flex-grow: 1;
+    }
+
+    &:hover {
+        background-color: $GRAY_OPACITY_1;
+    }
+}

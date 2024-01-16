@@ -1,0 +1,105 @@
+@import './variable.scss';
+
+@mixin font-twelve($color: $GRAY_5) {
+    font-size: 12px;
+    color: $color;
+    margin: 0.6em 0;
+}
+
+@mixin font-twelve-light($color: $GRAY_4) {
+    font-size: 12px;
+    color: $color;
+    margin: 0.6em 0;
+}
+
+@mixin font-twelve-bold($color: $GRAY_5) {
+    font-size: 12px;
+    color: $color;
+    margin: 0.6em 0;
+    font-weight: bold;
+}
+
+@mixin font-twelve-dark($color: $GRAY_6) {
+    font-size: 12px;
+    color: $color;
+    margin: 0.6em 0;
+}
+
+@mixin font-thirteen($color: $GRAY_5) {
+    font-size: 13px;
+    color: $color;
+    margin: 0.6em 0;
+}
+
+@mixin font-thirteen-light($color: $GRAY_4) {
+    font-size: 13px;
+    color: $color;
+    margin: 0.6em 0;
+}
+
+@mixin font-thirteen-bold($color: $GRAY_5) {
+    font-size: 13px;
+    color: $color;
+    font-weight: bold;
+    margin: 0.6em 0;
+}
+
+@mixin font-fourteen($color: $GRAY_5) {
+    font-size: 14px;
+    color: $color;
+    margin: 0.6em 0;
+}
+
+@mixin font-fourteen-light($color: $GRAY_4) {
+    font-size: 14px;
+    color: $color;
+    margin: 0.6em 0;
+}
+
+@mixin font-fourteen-bold($color: $GRAY_5) {
+    font-size: 14px;
+    color: $color;
+    font-weight: bold;
+    margin: 0.6em 0;
+}
+
+@mixin flex-container {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin disable-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+@mixin overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin max-lines-ellipsis($lines: 2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+}
